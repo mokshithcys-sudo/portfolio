@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mokshith Ippili | Portfolio</title>
+    <meta name="description" content="Portfolio of Mokshith Ippili, B.Tech student at Amrita Vishwa Vidyapeetham working toward a career in cloud security.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Sticky Navigation Bar -->
-    <nav class="navbar">
+    <a class="skip-link" href="#about">Skip to content</a>
+
+    <nav class="navbar" aria-label="Main">
         <div class="nav-container">
-            <span class="logo">Mokshith Ippili</span>
+            <a class="logo" href="#top">Mokshith Ippili</a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -21,91 +26,149 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <h1>Mokshith Ippili</h1>
-        <p>Motivated B.Tech student at Amrita Vishwa Vidyapeetham with a foundational understanding of Python and Java.</p>
-        <div class="contact-links">
-            <a href="mailto:mokshith.cys@gmail.com">Email</a>
-            <a href="https://github.com" target="_blank">GitHub</a>
-            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    <header class="hero" id="top">
+        <svg class="rings" viewBox="0 0 600 600" aria-hidden="true" focusable="false">
+            <rect x="20" y="20" width="560" height="560" rx="150" />
+            <rect x="85" y="85" width="430" height="430" rx="110" />
+            <rect x="150" y="150" width="300" height="300" rx="76" />
+            <rect x="215" y="215" width="170" height="170" rx="44" />
+            <circle cx="300" cy="300" r="26" class="core" />
+        </svg>
+        <div class="hero-inner">
+            <h1>Mokshith Ippili</h1>
+            <p class="hero-role">B.Tech student at Amrita School of Computing, building toward a career in cloud security.</p>
+            <div class="contact-links">
+                <a class="btn btn-primary" href="mailto:mokshith.cys@gmail.com">Email me</a>
+                <a class="btn" href="https://github.com/mokshithcys-sudo" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a class="btn" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
         </div>
     </header>
 
-    <!-- Executive Summary Section -->
-    <section id="about">
-        <h2>Executive Summary</h2>
-        <p>Motivated B.Tech student at Amrita Vishwa Vidyapeetham with a foundational understanding of Python and Java. Demonstrated interest in cybersecurity through practical scripting projects and specialized certifications from CISCO and AWS.</p>
-    </section>
+    <main>
+        <section id="about">
+            <h2>About</h2>
+            <div class="section-body">
+                <p class="lead">I'm a B.Tech student with a foundation in Python and Java. I've shown my interest in cybersecurity through hands-on scripting projects and certifications from Cisco and AWS.</p>
+            </div>
+        </section>
 
-    <!-- Technical Skills Section -->
-    <section id="skills">
-        <h2>Technical Skill Set</h2>
-        <ul>
-            <li><strong>Programming Languages:</strong> Python, C/C++ </li>
-            <li><strong>Cybersecurity:</strong> Cybersecurity concepts, Familiar with Networking tools </li>
-            <li><strong>Web Development:</strong> Java, HTML </li>
-            <li><strong>Operating Systems & Tools:</strong> Linux, Git/GitHub </li>
-            <li><strong>Core Skills:</strong> Projects problem Solving, Debugging </li>
-        </ul>
-    </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="section-body">
+                <dl class="skill-list">
+                    <div>
+                        <dt>Programming</dt>
+                        <dd><span class="chip">Python</span><span class="chip">Java</span><span class="chip">C/C++</span></dd>
+                    </div>
+                    <div>
+                        <dt>Cybersecurity</dt>
+                        <dd><span class="chip">Security concepts</span><span class="chip">Networking tools</span></dd>
+                    </div>
+                    <div>
+                        <dt>Web</dt>
+                        <dd><span class="chip">HTML</span><span class="chip">CSS</span></dd>
+                    </div>
+                    <div>
+                        <dt>Systems and tools</dt>
+                        <dd><span class="chip">Linux</span><span class="chip">Git/GitHub</span></dd>
+                    </div>
+                    <div>
+                        <dt>Core strengths</dt>
+                        <dd><span class="chip">Problem solving</span><span class="chip">Debugging</span></dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects & Involvement</h2>
-        
-        <div class="project-card">
-            <h3>Local LLM Deployment and Optimization</h3>
-            <p>Deployed a quantized 4-billion parameter Large Language Model (Qwen) using llamafile and llama.cpp for offline, privacy-preserving inference.</p>
-            <p>Established a privacy-preserving AI environment capable of securely analysing sensitive system logs and proprietary code without exposing data to third-party APIs.</p>
-        </div>
+        <section id="projects">
+            <h2>Projects and involvement</h2>
+            <div class="section-body">
+                <article class="project featured">
+                    <h3>Local LLM deployment and optimization</h3>
+                    <p>Deployed a quantized 4-billion parameter Large Language Model (Qwen) using llamafile and llama.cpp for offline, privacy-preserving inference.</p>
+                    <p>Set up an environment that can analyse sensitive system logs and proprietary code without sending data to third-party APIs.</p>
+                    <ul class="tags" aria-label="Technologies">
+                        <li>Qwen</li><li>llamafile</li><li>llama.cpp</li>
+                    </ul>
+                </article>
 
-        <div class="project-card">
-            <h3>Custom Password Generator Python Project</h3>
-            <p>Developed a randomized password generator script using Python to output secure, alphanumeric credentials.</p>
-            <p>Applied fundamental programming concepts including loops, string manipulation, and the random module to execute security logic.</p>
-        </div>
+                <article class="project">
+                    <h3>Custom password generator</h3>
+                    <p>Wrote a Python script that generates random alphanumeric passwords.</p>
+                    <p>Used loops, string manipulation and the random module to apply basic security logic.</p>
+                    <ul class="tags" aria-label="Technologies">
+                        <li>Python</li>
+                    </ul>
+                </article>
 
-         <div class="project-card">
-            <h3>Created a Personal Portfolio website </h3>
-            <p>Created a  personal portfolio website using HTML and CSS.</p>
-            <p>Built a personal portfolio website using HTML for structure and design.</p>
-            <p>Integrated SQL concepts to manage and organise data</p>
-            <p>Deployed the site using Github Pages, enabling a free domain and easy hosting.</p>
-        </div>
-        
-        <div class="project-card">
-            <h3>Campus Involvement</h3>
-            <p><strong>Prospective Member, BIOS Club Amrita Vishwa Vidyapeetham:</strong></p>
-            <p>Currently participating in the competitive recruitment process to engage with campus technical initiatives</p>
-            <p>Also Participated in Bi0s workshop (Pentest)</p>
-        </div>
-    </section>
+                <article class="project">
+                    <h3>Personal portfolio website</h3>
+                    <p>Built this site with HTML for structure and CSS for design.</p>
+                    <p>Applied SQL concepts to manage and organise data.</p>
+                    <p>Deployed it on GitHub Pages for free hosting and a free domain.</p>
+                    <ul class="tags" aria-label="Technologies">
+                        <li>HTML</li><li>CSS</li><li>GitHub Pages</li>
+                    </ul>
+                </article>
 
-    <section id="certifications">
-        <h2>Certifications & Coursework</h2>
-        
-        <div class="certificate-card">
-            <h3>Introduction to Cybersecurity</h3>
-            <p>Awarded to Mokshith I by Cisco Networking Academy on 19 Jul 2026 with Cert ID: 9ab55081-31d9-4a94-8127-8f578645cd82.</p>
-            <a href="https://github.com/mokshithcys-sudo/portfolio/blob/main/Introduction_to_Cybersecurity_certificate_mokshith-cys-gmail-com_9ab55081-31d9-4a94-8127-8f578645cd82.pdf">View Cisco Certificate</a>
-        </div>
+                <article class="project">
+                    <h3>Campus involvement</h3>
+                    <p><strong>Prospective member, bi0s Club, Amrita Vishwa Vidyapeetham.</strong> Currently going through the club's competitive recruitment process to join its technical initiatives.</p>
+                    <p>Took part in the bi0s penetration testing (Pentest) workshop.</p>
+                </article>
+            </div>
+        </section>
 
-        <div class="certificate-card">
-            <h3>Malware Analysis on AWS: Setting up a secure environment</h3>
-            <p>Awarded to Mokshith ippili by AWS Training & Certification, completed on July 19, 2026.</p>
-            <a href="https://github.com/mokshithcys-sudo/portfolio/blob/main/AWS.pdf" target="_blank" rel="noopener noreferrer">View AWS Certificate</a>
-        </div>
-    </section>
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <div class="section-body">
+                <article class="cert">
+                    <div>
+                        <h3>Introduction to Cybersecurity</h3>
+                        <p>Cisco Networking Academy, awarded 19 Jul 2026</p>
+                        <p class="cert-id">Certificate ID: 9ab55081-31d9-4a94-8127-8f578645cd82</p>
+                    </div>
+                    <a class="btn" href="https://github.com/mokshithcys-sudo/portfolio/blob/main/Introduction_to_Cybersecurity_certificate_mokshith-cys-gmail-com_9ab55081-31d9-4a94-8127-8f578645cd82.pdf" target="_blank" rel="noopener noreferrer">View certificate</a>
+                </article>
 
-    <!-- Education Section -->
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li><strong>B.Tech</strong> Amrita Vishwa Vidyapeetham, Amrita School of Computing | Expected Graduation: 2030</li>
-            <li><strong>Class XII (AP State Board)</strong> Vidisha Junior College | Score: 90.4% (2024-2026)</li>
-            <li><strong>Class X (ICSE)</strong> Alwardas Public School | Score: 80% (2023 - 2024)</li>
-        </ul>
-    </section>
+                <article class="cert">
+                    <div>
+                        <h3>Malware Analysis on AWS: Setting up a secure environment</h3>
+                        <p>AWS Training and Certification, completed 19 Jul 2026</p>
+                    </div>
+                    <a class="btn" href="https://github.com/mokshithcys-sudo/portfolio/blob/main/AWS.pdf" target="_blank" rel="noopener noreferrer">View certificate</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="section-body">
+                <ol class="timeline">
+                    <li>
+                        <h3>B.Tech</h3>
+                        <p>Amrita Vishwa Vidyapeetham, Amrita School of Computing</p>
+                        <p class="meta">Expected graduation 2030</p>
+                    </li>
+                    <li>
+                        <h3>Class XII (AP State Board)</h3>
+                        <p>Vidisha Junior College</p>
+                        <p class="meta">2024-2026 &nbsp;|&nbsp; 90.4%</p>
+                    </li>
+                    <li>
+                        <h3>Class X (ICSE)</h3>
+                        <p>Alwardas Public School</p>
+                        <p class="meta">2023-2024 &nbsp;|&nbsp; 80%</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Mokshith Ippili</p>
+        <p><a href="mailto:mokshith.cys@gmail.com">mokshith.cys@gmail.com</a></p>
+    </footer>
 </body>
 </html>
